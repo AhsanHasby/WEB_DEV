@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 const MealCategory = ({category = []}) => {
     
@@ -11,7 +12,9 @@ const MealCategory = ({category = []}) => {
                     <img src={curr.strCategoryThumb} className="card-img-top" alt={curr.strCategory}/>
                     <div className="card-body">
                         <h5 className="card-title">{curr.strCategory}</h5>
-                        <button className="card-text">Available Items</button>
+                        <NavLink to = {`/category/${curr.strCategory}`}>
+                            <button className="card-text">Available Items</button>
+                        </NavLink>
                     </div>
                     </div>
                 </div>

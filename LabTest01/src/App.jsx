@@ -14,7 +14,7 @@ const App = () => {
         <Route path = "/" element = {<MainPage/>}></Route>
         <Route path = "/category" element = {<MealCategory/>}></Route>
         <Route path = "/category/:strCategory" element = {<MealItem/>}></Route>
-        <Route path = "/item/:idmeal" element = {<MealInfo/>}></Route>
+        <Route path = "/item/:idMeal" element = {<MealInfo/>}></Route>
         <Route path= "/letter" element = {<MealSearch />}></Route>
         <Route path = "/*" element = {<PageNotFound/>}></Route>
       </Routes>
