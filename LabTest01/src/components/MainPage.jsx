@@ -11,7 +11,7 @@ const MainPage = () => {
         const data = await response.json()
 
         setCategory(data.categories)
-        console.log(data)
+        console.log(data.categories)
         setStatus(false)
     }
 
