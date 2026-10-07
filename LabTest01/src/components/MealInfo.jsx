@@ -9,7 +9,7 @@ const MealInfo = () => {
     const [item, setItem] = useState(null)
 
     useEffect( () => {
-        const FindMeal = async () => {
+        const FindItem = async () => {
             setStatus(true)
             try {
                 const response = await fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${idMeal}`)
@@ -24,7 +24,7 @@ const MealInfo = () => {
                 setStatus(false)
             }
         }
-        FindMeal() // calling to run when useEffect runs
+        FindItem() // calling to run when useEffect runs
     }, [idMeal])
 
   return (
